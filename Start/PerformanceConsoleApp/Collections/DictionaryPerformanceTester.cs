@@ -65,7 +65,7 @@ namespace PerformanceConsoleApp
                     if (_upperCaseTempDictionary.TryGetValue(item, out string lookupValue))
                     {
                         result = lookupValue;
-                        break;
+                        continue;
                     }
                     lookupValue = item.ToUpper();
                     _upperCaseTempDictionary[item] = lookupValue;
